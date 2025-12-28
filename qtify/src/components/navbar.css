@@ -16,7 +16,7 @@
     width: 67px;
     height: 34px;
     display: flex;
-    margin-left: 0;
+    padding-left: 10px;
     align-items: center;
   }
   
@@ -84,3 +84,13 @@
     margin-top: 20px; /* Space it from the navbar */
     background-color: #121212;
   }
+
+  .hero-container h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    margin: 0;
+    text-align: center;
+  }
+
