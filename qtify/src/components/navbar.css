@@ -18,6 +18,13 @@
     display: flex;
     padding-left: 10px;
     align-items: center;
+    height: 100%;
+  }
+
+  .qtify-logo img {
+    /* Ensure the image doesn't have its own top/bottom margins */
+    margin: 0; 
+    display: block;
   }
   
   .search-container {
