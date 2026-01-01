@@ -1,0 +1,30 @@
+.section-wrapper {
+    padding: 20px 32px;
+    background-color: #121212;
+    text-align: left; /* Fixes the centering issue in your screenshot */
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between; /* Title left, Collapse right */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h3 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.toggle-text {
+    color: #34C94B;
+    cursor: pointer;
+    margin: 0;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap; /* Makes them a grid instead of one long line */
+    gap: 40px;      /* Space between cards */
+    justify-content: flex-start;
+}

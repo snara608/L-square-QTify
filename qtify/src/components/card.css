@@ -1,0 +1,95 @@
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 159px; /* This matches the Figma measurement exactly */
+}
+
+.card {
+    position: relative;
+    width: 159px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+    height: 215px;
+}
+
+.card-Image {
+    width: 100%;
+    height: 170px;
+    object-fit: cover; /* Prevents image distortion */
+}
+  
+.card-body {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    height: 35px;
+  } 
+  
+  /* Styling the MUI Chip to match Figma */
+  .card-chip {
+
+  background-color: #121212 !important; /* Forces Black background */
+  color: #FFFFFF !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 10px !important;
+
+  /* Dimensions & Positioning */
+  width: 71px !important;
+  height: 23px !important;
+  border-radius: 10px !important;
+  opacity: 1 !important;
+  
+  /* Layout & Spacing */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 4px 8px 4px 8px !important;
+  gap: 1px !important;
+
+  /*Absolute positioning (only use if the parent has position: relative) */
+  /* top: 176px !important; 
+  left: 8px !important;  */
+
+
+
+  }
+
+  .album-title-text {
+    width: 130px;
+    height: 21px;
+    opacity: 1;
+  
+  /* Typography */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal; /* "Regular" in CSS is normal */
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+  
+  /* Color & Background */
+    color: #FFFFFF; /* Text color to be visible on dark background */
+  
+  
+  /* Layout Fixes */
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  
+
+  
+  
+  
+
+
