@@ -31,17 +31,3 @@
     grid-template-columns: repeat(7, 159px); */
     overflow: hidden;
 }
-
-/* NEW ALBUMS: Single row that does not wrap */
-.card-row {
-    display: flex;
-    flex-wrap: nowrap; /* Forces all cards into one row */
-    overflow-x: auto;  /* Allows scrolling */
-    gap: 40px;
-    padding-bottom: 10px;
-}
-
-/* Optional: Hide scrollbar for a cleaner carousel look */
-.card-row::-webkit-scrollbar {
-    display: none;
-}

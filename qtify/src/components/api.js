@@ -11,7 +11,7 @@ export const fetchTopAlbums = async () => {
 
 export const fetchNewAlbums = async () => {
     try{
-        const response = await fetch("https://qtify-backend.labs.crio.do/albums/top");
+        const response = await fetch("https://qtify-backend.labs.crio.do/albums/new");
         const data = await response.json()
         return data;
     }catch(error){
