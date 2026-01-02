@@ -14,6 +14,7 @@ function App() {
         <Navbar/>
         <Hero/>
         <Section title="Top Albums" fetchRes={fetchTopAlbums} />
+        
         <Section title="New Albums" fetchRes={fetchNewAlbums} />
        
       

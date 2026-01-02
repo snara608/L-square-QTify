@@ -21,7 +21,7 @@ const Section = ({ title, fetchRes }) => {
                 <h3>{title}</h3>
                 <h4 className="toggle-text" onClick={handleToggle}>{isCollapsed ? "Show All" : "Collapse"}</h4>
             </div>
-            <div className="card-grid">
+            <div className={title === "Top Albums" ? "card-grid" : "card-row"}>
                 {data.map((item) => (
                     <Card key={item.id} data={item} />
                 ))}
