@@ -13,8 +13,8 @@ function App() {
       <header className="App-header">
         <Navbar/>
         <Hero/>
-        <Section title="Top Albums" fetchRes={fetchTopAlbums}/>
-        <Section title="New Albums" fetchRes={fetchTopAlbums}/>
+        <Section title="Top Albums" fetchRes={fetchTopAlbums} limit={14}/>
+        <Section title="New Albums" fetchRes={fetchTopAlbums} limit={7}/>
        
       
         
