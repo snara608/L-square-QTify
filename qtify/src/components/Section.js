@@ -8,6 +8,7 @@ const Section = ({ title, fetchRes }) => {
     useEffect(() => {
         fetchRes().then((res) => setData(res));
     }, [fetchRes]);
+const cardsToDisplay = data.slice(0, 14);
 
     return (
         <div className="section-wrapper">
@@ -16,9 +17,9 @@ const Section = ({ title, fetchRes }) => {
                 <h4 className="toggle-text">Collapse</h4>
             </div>
             <div className="card-grid">
-                {data.map((item) => (
-                    <Card key={item.id} data={item} />
-                ))}
+            {cardsToDisplay.map((item) => (
+            <Card key={item.id} data={item} />
+        ))}
             </div>
             
         </div>

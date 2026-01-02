@@ -27,4 +27,5 @@
     flex-wrap: wrap; /* Makes them a grid instead of one long line */
     gap: 40px;      /* Space between cards */
     justify-content: flex-start;
+    max-width: 1353px;
 }
