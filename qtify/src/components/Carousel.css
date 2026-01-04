@@ -1,0 +1,43 @@
+.carousel-wrapper {
+    position: relative;
+    width: 1384px; /* Figma Group 3742 width */
+    max-width: 100%;
+}
+
+.swiper-slide {
+    width: 159px !important; /* Figma card width */
+    height: 232px !important;
+}
+
+
+.left-nav, .right-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    cursor: pointer;
+}
+
+.left-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0; /* Align to left edge per Figma */
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* Style the Right Navigation Component */
+.right-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0; /* Align to right edge per Figma */
+    z-index: 10;
+    cursor: pointer;
+}
+
+.left-nav svg, .right-nav svg {
+    width: 32px;
+    height: 32px;
+}

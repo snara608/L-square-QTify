@@ -13,9 +13,11 @@ function App() {
       <header className="App-header">
         <Navbar/>
         <Hero/>
-        <Section title="Top Albums" fetchRes={fetchTopAlbums} />
-        
-        <Section title="New Albums" fetchRes={fetchNewAlbums} />
+        {/* Top Albums - Always Grid */}
+<Section title="Top Albums" fetchRes={fetchTopAlbums} />
+
+{/* New Albums - Toggles between Carousel and Grid */}
+<Section title="New Albums" fetchRes={fetchNewAlbums} type="newAlbums" />
        
       
         

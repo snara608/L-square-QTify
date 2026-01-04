@@ -1,0 +1,22 @@
+/* CarouselNavigation.css */
+
+.left-nav, .right-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.left-nav {
+    left: 0px; /* Figma Group 3741: left: 0px */
+}
+
+.right-nav {
+    right: 0px; /* Pins it to the end of the 1384px container */
+}
+
+.left-nav svg, .right-nav svg {
+    width: 32px; /* Figma: 32px */
+    height: 32px;
+}

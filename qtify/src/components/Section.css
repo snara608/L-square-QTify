@@ -31,3 +31,7 @@
     grid-template-columns: repeat(7, 159px); */
     overflow: hidden;
 }
+.section-content {
+    min-height: 200px; /* Prevents layout jump when switching */
+    margin-top: 20px;
+}
