@@ -37,7 +37,7 @@ const Songs = ({ title }) => {
 
     return (
         <div className="songs-section-wrapper">
-            <h3 className="section-title">{title}</h3>
+            <h3 className="section-header">{title}</h3>
             
             <Tabs 
                 value={selectedTab} 

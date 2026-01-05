@@ -2,9 +2,16 @@
     padding: 20px 40px;
 }
 
-.section-title {
-    color: white;
-    margin-bottom: 10px;
+.section-header {
+    display: flex;
+    justify-content: space-between; /* Keeps title on the left */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h3 {
+    color: var(--color-white);
+    font-weight: 600;
 }
 
 /* Customizing Material UI Tabs */
