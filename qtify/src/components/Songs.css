@@ -1,0 +1,21 @@
+.songs-section-wrapper {
+    padding: 20px 40px;
+}
+
+.section-title {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Customizing Material UI Tabs */
+.MuiTab-root {
+    color: #FFFFFF !important;
+}
+
+.Mui-selected {
+    color: #34C94B !important; /* Green color from Figma */
+}
+
+.MuiTabs-indicator {
+    background-color: #34C94B !important;
+}

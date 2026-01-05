@@ -1,20 +1,43 @@
+import axios from "axios";
+
+const BACKEND_ENDPOINT = "https://qtify-backend.labs.crio.do";
+
 export const fetchTopAlbums = async () => {
-    try{
-        const response = await fetch("https://qtify-backend.labs.crio.do/albums/top");
-        const data = await response.json()
-        return data;
-    } catch (error){
-        console.error("Error fetching albums", error);
+    try {
+        const response = await axios.get(`${BACKEND_ENDPOINT}/albums/top`);
+        return response.data;
+    } catch (e) {
+        console.error(e);
         return [];
     }
 };
 
 export const fetchNewAlbums = async () => {
-    try{
-        const response = await fetch("https://qtify-backend.labs.crio.do/albums/new");
-        const data = await response.json()
-        return data;
-    }catch(error){
-        console.error("Error fetching albums", error)
+    try {
+        const response = await axios.get(`${BACKEND_ENDPOINT}/albums/new`);
+        return response.data;
+    } catch (e) {
+        console.error(e);
+        return [];
     }
-}
+};
+
+export const fetchSongs = async () => {
+    try {
+        const response = await axios.get(`${BACKEND_ENDPOINT}/songs`);
+        return response.data;
+    } catch (e) {
+        console.error(e);
+        return [];
+    }
+};
+
+export const fetchGenres = async () => {
+    try {
+        const response = await axios.get(`${BACKEND_ENDPOINT}/genres`);
+        return response.data; // Note: API returns { data: [...] }
+    } catch (e) {
+        console.error(e);
+        return null;
+    }
+};
